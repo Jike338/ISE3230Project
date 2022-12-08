@@ -70,15 +70,15 @@ constraints.append(s[0]+s[1]+s[2]+s[3] >= 0)
 constraints.append(ps >= 0)
 
 # lower bound 
-constraints.append(8.17*c[0]+5.71*c[1]+5.83*c[2]+4.33*c[3]+6*c[4]+0.33*p[0]+1.25*p[1]+1*v[0]+1*v[1]+2*v[2]+3*v[3]+5*s[0]+5*s[1]+2*s[2]+2*s[3]+0*ps >= carb_needed_lower*0.95)
-constraints.append(0.83*c[0]+0.46*c[1]+1.33*c[2]+1*c[3]+0*c[4]+6*p[0]+3*p[1]+0*v[0]+0*v[1]+0*v[2]+0*v[3]+0*s[0]+0*s[1]+2*s[2]+3*s[3]+33*ps >= protein_needed_lower*0.95)
-constraints.append(0.25*c[0]+0.03*c[1]+0.58*c[2]+1*c[3]+0*c[4]+1.67*p[0]+2*p[1]+1*v[0]+0*v[1]+2*v[2]+0*v[3]+1*s[0]+1*s[1]+1.5*s[2]+0*s[3]+34*ps>= fat_needed_lower*0.95)
+constraints.append(8.17*c[0]+5.71*c[1]+5.83*c[2]+4.33*c[3]+6*c[4]+0.33*p[0]+1.25*p[1]+1*v[0]+1*v[1]+2*v[2]+3*v[3]+5*s[0]+5*s[1]+2*s[2]+2*s[3]+0*ps >= carb_needed_lower)
+constraints.append(0.83*c[0]+0.46*c[1]+1.33*c[2]+1*c[3]+0*c[4]+6*p[0]+3*p[1]+0*v[0]+0*v[1]+0*v[2]+0*v[3]+0*s[0]+0*s[1]+2*s[2]+3*s[3]+33*ps >= protein_needed_lower)
+constraints.append(0.25*c[0]+0.03*c[1]+0.58*c[2]+1*c[3]+0*c[4]+1.67*p[0]+2*p[1]+1*v[0]+0*v[1]+2*v[2]+0*v[3]+1*s[0]+1*s[1]+1.5*s[2]+0*s[3]+34*ps>= fat_needed_lower)
 constraints.append(38.33*c[0]+24.57*c[1]+33.33*c[2]+31.67*c[3]+25*c[4]+43.33*p[0]+35*p[1]+20*v[0]+10*v[1]+25*v[2]+15*v[3]+30*s[0]+25*s[1]+20*s[2]+15*s[3]+440*ps >= calories_lower)
 
 # upper bound 
-constraints.append(8.17*c[0]+5.71*c[1]+5.83*c[2]+4.33*c[3]+6*c[4]+0.33*p[0]+1.25*p[1]+1*v[0]+1*v[1]+2*v[2]+3*v[3]+5*s[0]+5*s[1]+2*s[2]+2*s[3]+0*ps <= carb_needed_upper*1.05)
-constraints.append(0.83*c[0]+0.46*c[1]+1.33*c[2]+1*c[3]+0*c[4]+6*p[0]+3*p[1]+0*v[0]+0*v[1]+0*v[2]+0*v[3]+0*s[0]+0*s[1]+2*s[2]+3*s[3]+33*ps <= protein_needed_upper*1.05)
-constraints.append(0.25*c[0]+0.03*c[1]+0.58*c[2]+1*c[3]+0*c[4]+1.67*p[0]+2*p[1]+1*v[0]+0*v[1]+2*v[2]+0*v[3]+1*s[0]+1*s[1]+1.5*s[2]+0*s[3]+34*ps <= fat_needed_upper*1.05)
+constraints.append(8.17*c[0]+5.71*c[1]+5.83*c[2]+4.33*c[3]+6*c[4]+0.33*p[0]+1.25*p[1]+1*v[0]+1*v[1]+2*v[2]+3*v[3]+5*s[0]+5*s[1]+2*s[2]+2*s[3]+0*ps <= carb_needed_upper)
+constraints.append(0.83*c[0]+0.46*c[1]+1.33*c[2]+1*c[3]+0*c[4]+6*p[0]+3*p[1]+0*v[0]+0*v[1]+0*v[2]+0*v[3]+0*s[0]+0*s[1]+2*s[2]+3*s[3]+33*ps <= protein_needed_upper)
+constraints.append(0.25*c[0]+0.03*c[1]+0.58*c[2]+1*c[3]+0*c[4]+1.67*p[0]+2*p[1]+1*v[0]+0*v[1]+2*v[2]+0*v[3]+1*s[0]+1*s[1]+1.5*s[2]+0*s[3]+34*ps <= fat_needed_upper)
 constraints.append(38.33*c[0]+24.57*c[1]+33.33*c[2]+31.67*c[3]+25*c[4]+43.33*p[0]+35*p[1]+20*v[0]+10*v[1]+25*v[2]+15*v[3]+30*s[0]+25*s[1]+20*s[2]+15*s[3]+440*ps <= calories_upper)
 
 
